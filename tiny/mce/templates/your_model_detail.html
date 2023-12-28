@@ -1,0 +1,17 @@
+<!-- your_app_name/templates/your_app_name/your_model_detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ object.title }}</title>
+</head>
+<body>
+    <h1>{{ object.title }}</h1>
+    <p>{{ object.created_at|date:"F d, Y H:i" }}</p>
+    <p>{{ object.updated_at|date:"F d, Y H:i" }}</p>
+    <div>
+        {{ object.content|safe }}
+    </div>
+</body>
+</html>
